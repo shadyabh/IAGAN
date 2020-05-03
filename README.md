@@ -18,6 +18,6 @@ In "IAGAN.py" we added the bicubic down-sampling and the fft compression models 
     @ARTICLE{IAGAN,
       author = {{Abu Hussein}, Shady and {Tirer}, Tom and {Giryes}, Raja},
       title = "{Image-Adaptive GAN based Reconstruction}",
-      journal = {arXiv e-prints},
+      journal = {AAAI Conference on Artificial Intelligence},
       year = "2020"
     }
