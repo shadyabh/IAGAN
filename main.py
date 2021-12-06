@@ -60,7 +60,7 @@ GT_imgs.sort()
 for img in GT_imgs:
     GT = IAGAN.load_img(in_dir + img, device)*(G_out_range[1] - G_out_range[0]) + G_out_range[0]
     y = A(GT)
-    e = torch.rand_like(y)*2*config.noise_lvl
+    e = torch.randn_like(y)*config.noise_lvl
     y += e
     A_dagY = A_dag(y)
 

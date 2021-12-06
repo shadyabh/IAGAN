@@ -141,7 +141,7 @@ def IA(y, G, z_hat, config):
     G.to(config.device)
     Z = torch.autograd.Variable(z_hat, requires_grad=True)
     optimizer_G = torch.optim.Adam(G.parameters(), lr=config.lr_G)
-    optimizer_z = torch.optim.Adam([{'params': Z, 'lr': config.lr_z_CSGM}])
+    optimizer_z = torch.optim.Adam([{'params': Z, 'lr': config.lr_z_IA}])
     objective = torch.nn.MSELoss()
 
     print('Running image adaptive stage:')
